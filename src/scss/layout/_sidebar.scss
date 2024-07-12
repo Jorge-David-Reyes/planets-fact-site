@@ -1,0 +1,35 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.icon-sidebar {
+    display: none;
+
+    img {
+        transition: filter 0.3s ease;
+    }
+
+    button{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        transition: filter 0.3s ease;
+
+        &:hover {
+            cursor: pointer;
+            img {
+                filter: brightness(40%);
+            }
+        }
+    }
+
+    @include m.mobile{
+        min-height: v.$heightHeader;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  }

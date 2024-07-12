@@ -1,0 +1,76 @@
+@use './variables' as v;
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: v.$league-spartan;
+    font-weight: v.$regular;
+    font-size: 14px;
+    line-height: 25px;
+    min-height: 100vh;
+    margin: 0px;
+
+    color: v.$white;
+    background-color: v.$black; 
+}
+
+h1 {
+    font-family: v.$antonio;
+    font-weight: v.$medium;
+    font-size: 80px;
+    line-height: 103px;
+
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+h2 {
+    font-family: v.$antonio;
+    font-weight: v.$medium;
+    font-size: 40px;
+    line-height: 52px;
+
+    letter-spacing: -1.5px;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+h3 {
+    font-family: v.$league-spartan;
+    font-weight: v.$bold;
+    font-size: 12px;
+    line-height: 25px;
+
+    letter-spacing: 2.6px;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+h4{
+    font-family: v.$league-spartan;
+    font-weight: v.$bold;
+    font-size: 11px;
+    line-height: 25px;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+a{
+    color: v.$white;
+    text-decoration: none;
+    margin: 0px;
+}
+
+
+
+.content {
+    max-width: 144rem;
+    margin: 0 auto;
+}

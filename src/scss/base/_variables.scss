@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=League+Spartan:wght@100..900&display=swap');
+
+// Fonts
+$antonio: "Antonio", sans-serif;
+$league-spartan: "League Spartan", sans-serif;
+
+
+// Colors
+$white: hsl(0, 0%, 100%); // #FFFFFF, rgb(255, 255, 255)
+$black: hsl(240, 67%, 8%); // #070724, rgb(7, 7, 36)
+$dark-gray: hsl(240, 17%, 26%); // #38384F, rgb(56, 56, 79)
+$gray: hsl(240, 6%, 54%); // #838391, rgb(131, 131, 145)
+
+$planetColors: (
+    mercury: hsl(194, 48%, 49%), // #419EBB, rgb(65, 158, 187)
+    venus: hsl(33, 82%, 61%), // #EDA249, rgb(237, 162, 73)
+    earth: hsl(263, 67%, 61%), // #6F2ED6, rgb(109, 46, 213)
+    mars: hsl(10, 63%, 51%), // #D14C32, rgb(209, 76, 50)
+    jupiter: hsl(2, 68%, 53%), // #D83A34, rgb(216, 58, 52)
+    saturn: hsl(17, 73%, 46%), // #CD5120, rgb(205, 81, 32)
+    uranus: hsl(169, 73%, 44%), // #1EC2A4, rgb(30, 193, 162)
+    neptune: hsl(222, 87%, 56%) // #2D68F0, rgb(45, 104, 240)
+);
+
+// $separacion: 5rem;
+
+// Fuentes
+$regular : 400;
+$medium: 500;
+$bold: 700;
+
+
+// Tamaños de Media Queries
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 992px;
+$desktopXL: 1200px;
+
+// Header
+$heightHeader: 7rem;
