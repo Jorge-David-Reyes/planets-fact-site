@@ -1,0 +1,13 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+.box-title {
+    min-height: v.$heightHeader;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        font-size: 28px;
+    }
+}

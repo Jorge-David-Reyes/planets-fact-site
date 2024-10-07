@@ -1,0 +1,27 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+/* Navbar */
+.nav{
+
+    display: inline-block;
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    @include m.tablet{
+        width: 100%;
+    }
+
+    @include m.mobile {
+        display: none;
+    }
+}

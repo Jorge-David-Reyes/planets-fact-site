@@ -1,0 +1,56 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+.navbar-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: v.$heightHeader;
+    margin: 0 10px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    a {
+        color: darken(v.$white, 20%);
+
+        &:hover {
+            color: v.$white;
+        }
+    }
+
+    @each $planet in map-keys(v.$planetColors) {
+        .#{$planet} {
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 50%;
+                right: 50%;
+                height: 2px;
+                background-color: transparent;
+                transition: left 0.3s ease, right 0.3s ease;
+            }
+    
+            &:hover {
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    height: 2px;
+                    left: 0;
+                    right: 0;
+                    background-color: map-get(v.$planetColors, $planet);
+
+                    color: darken(v.$white, 0%) !important;
+                    
+                    @include m.tablet {
+                        top: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

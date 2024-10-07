@@ -1,16 +1,15 @@
 import { useState } from 'react';
-import { NavBar } from "../components" 
+import { Header } from '../components/header';
 
 export const PlanetLayout = ({children}) => {
-  const [selectedPlanet, setSelectedPlanet] = useState('');
 
   return (
     <>
-        <NavBar onSelectPlanet={setSelectedPlanet}/>
+        <Header/>
 
-        <div>
+        <main>
             {children}
-        </div>
+        </main>
     </>
   )
 }

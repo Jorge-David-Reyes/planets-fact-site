@@ -1,11 +1,12 @@
 import React from 'react'
-import hamburguerIcon from '../../assets/icon-hamburger.svg'
+import hamburguerIcon from '../../../assets/icon-hamburger.svg'
 
-export const SideBar = ({open, onClose, onOpen}) => {
+
+export const SideBar = () => {
   return (
     <>
         <div className="icon-sidebar">
-            <button onClick={onOpen}>
+            <button >
                 <img src={hamburguerIcon} alt="" />
             </button>
         </div>

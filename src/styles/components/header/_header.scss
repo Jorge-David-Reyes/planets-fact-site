@@ -1,0 +1,25 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+/* Header */
+.header {
+    border-bottom: 1px solid v.$dark-gray;
+
+    /* Content Header */
+    .content-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        margin: 0 30px;
+
+
+        @include m.tablet {
+            flex-direction: column;
+        }
+
+        @include m.mobile {
+            flex-direction: row;
+        }
+    }
+}
