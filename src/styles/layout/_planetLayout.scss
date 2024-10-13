@@ -1,0 +1,112 @@
+@use '../base/variables' as v;
+@use '../base/variables' as m;
+
+.box__planet{
+    max-width: 1100px;
+    width: 100%;
+	display: flex;
+	flex-direction: column;
+    margin: 0 auto;
+	
+	.text__planet{
+		display: flex;
+		flex-direction: row;
+        justify-content: space-between;
+        height: 540px;
+        margin-bottom: 80px;
+        transition: all ease-in-out 0.3s;
+
+        @include m.tablet {
+            flex-direction: column;
+            height: auto;
+            margin-bottom: 30px;
+        }
+
+        .planet__image{
+            // background-color: green;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            transition: all ease-in-out 0.3s;
+            position: relative;
+        }
+
+        .planet__content{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            // background-color: yellow;
+            max-width: 350px;
+            width: 100%;
+            transition: all ease-in-out 0.3s;
+
+            @include m.tablet {
+                flex-direction: row;
+                max-width: 100%;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .planet__info{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                // justify-content: space-between;
+                transition: all ease-in-out 0.3s;
+
+                @include m.tablet{
+                    width: 339px;
+                    height: 253px;
+                    justify-content: space-between;
+                    margin-right: 35px;
+
+                    .planet__title{
+                        .title{
+                            font-size: 48px;
+                            line-height: 96px;
+                        }
+                    }
+    
+                    .planet__paragraph{
+                        .paragraph{
+                            // font-size: 14px;
+                            line-height: 22px;
+                        }
+                    }
+    
+                    .planet__source{
+                        .source{
+                            // font-size: 12px;
+                            line-height: 20px;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+
+            .planet__menu{
+                transition: all ease-in-out 0.3s;
+                @include m.tablet{
+                    width: 281px;
+                    margin-top: 50px;
+                }
+            }
+
+        }
+	}	
+	
+	.footer__planet{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 255px);
+        justify-content: space-between;
+        width: 100%;
+        transition: all ease-in-out 0.3s;
+        row-gap: 30px;
+
+        @include m.tablet{
+            grid-template-columns: repeat(auto-fill, 164px);
+        }
+	}
+}

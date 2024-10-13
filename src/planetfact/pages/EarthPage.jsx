@@ -8,7 +8,7 @@ import { getImagePath } from '@/helpers/imageHelper';
 const name = 'Earth';
 const attribute = 'earth__image';
 
-export const PlanetPage = () => {
+export const EarthPage = () => {
   const planet = data.find(p => p.name === name);
   const [selectedSection, setSelectedSection] = useState('overview');
 

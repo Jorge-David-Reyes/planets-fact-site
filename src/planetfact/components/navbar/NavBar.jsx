@@ -1,5 +1,4 @@
 import { NavBarItem } from "./NavBarItem";
-import { useState } from 'react';
 
 export const NavBar = ({ planets }) => {
 

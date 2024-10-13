@@ -1,0 +1,234 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+.image__container{
+    display: flex;
+    position: relative;
+    justify-content: center; 
+    align-items: end; 
+    position: relative;
+    height: auto;
+}
+
+.geology{
+    width: 163px;
+    position: absolute;
+    transition: all ease-in-out 0.7s;
+
+
+    @include m.tablet{
+        width: 120px;
+    }
+
+    @include m.mobile{
+        width: 80px;
+    }
+}
+
+.mercury__image{
+    .planet{
+        width: 290px;
+        transition: all ease-in-out 0.7s;
+    
+        @include m.tablet{
+            width: 184px;
+        }
+    
+        @include m.mobile{
+            width: 111px;
+        }
+    }
+
+    .geology{
+        bottom: -45%;
+        @include m.tablet{
+            bottom: -55%;
+        }
+    
+        @include m.mobile{
+            bottom: -65%;
+        }
+    }
+}
+
+.venus__image{
+    .planet{
+        width: 400px;
+        transition: all ease-in-out 0.7s;
+    
+        @include m.tablet{
+            width: 253px;
+        }
+    
+        @include m.mobile{
+            width: 154px;
+        }
+    }
+
+    .geology{
+        bottom: -20%;
+        @include m.tablet{
+            bottom: -25%;
+        }
+    
+        @include m.mobile{
+            bottom: -30%;
+        }
+    }
+}
+
+.earth__image{
+    .planet{
+        width: 450px;
+        transition: all ease-in-out 0.7s;
+        
+        @include m.tablet{
+            width: 285px;
+        }
+
+        @include m.mobile{
+            width: 173px;
+        }
+    }
+
+    .geology{
+        bottom: -12%;
+        @include m.tablet{
+            bottom: -20%;
+        }
+    
+        @include m.mobile{
+            bottom: -25%;
+        }
+    }
+}
+
+.mars__image{
+    .planet{
+        width: 336px;
+        transition: all ease-in-out 0.7s;
+    
+        @include m.tablet{
+            width: 213px;
+        }
+    
+        @include m.mobile{
+            width: 129px;
+        } 
+    }
+
+    .geology{
+        bottom: -35%;
+        @include m.tablet{
+            bottom: -45%;
+        }
+    
+        @include m.mobile{
+            bottom: -50%;
+        }
+    }
+}
+
+.jupiter__image{
+    .planet{
+        width: 582px;
+        transition: all ease-in-out 0.7s;
+    
+        @include m.tablet{
+            width: 369px;
+        }
+    
+        @include m.mobile{
+            width: 224px;
+        } 
+    }
+
+    .geology{
+        bottom: 2%;
+        @include m.tablet{
+            bottom: -4%;
+        }
+    
+        @include m.mobile{
+            bottom: -8%;
+        }
+    }
+}
+
+.saturn__image{
+    .planet{
+        width: 666.09px;
+        transition: all ease-in-out 0.7s;
+
+        @include m.tablet{
+            width: 422px;
+        }
+
+        @include m.mobile{
+            width: 256px;
+        }
+    }
+
+    .geology{
+        bottom: 10%;
+        @include m.tablet{
+            bottom: 5%;
+        }
+    
+        @include m.mobile{
+            bottom: 0%;
+        }
+    }
+}
+
+.uranus__image{
+    .planet{
+        width: 458px;
+        transition: all ease-in-out 0.7s;
+    
+        @include m.tablet{
+            width: 290px;
+        }
+    
+        @include m.mobile{
+            width: 176px;
+        }
+    }
+
+    .geology{
+        bottom: -15%;
+        @include m.tablet{
+            bottom: -20%;
+        }
+    
+        @include m.mobile{
+            bottom: -25%;
+        }
+    }
+}
+
+.neptune__image{
+    .planet{
+        width: 450px;
+        transition: all ease-in-out 0.7s;
+    
+        @include m.tablet{
+            width: 285px;
+        }
+    
+        @include m.mobile{
+            width: 173px;
+        }
+    }
+
+    .geology{
+        bottom: -12%;
+        @include m.tablet{
+            bottom: -20%;
+        }
+    
+        @include m.mobile{
+            bottom: -25%;
+        }
+    }
+}

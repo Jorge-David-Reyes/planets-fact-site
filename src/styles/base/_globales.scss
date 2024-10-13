@@ -19,6 +19,20 @@ body {
     background-color: v.$black; 
 }
 
+main{
+    height: 100%;
+    margin-top: 130px;
+    margin-bottom: 50px;
+    margin-left: 35px;
+    margin-right: 35px;
+
+    transition: all ease-in-out 0.3s;
+
+    @include m.tablet{
+        margin-top: 50px;
+    }
+}
+
 h1 {
     font-family: v.$antonio;
     font-weight: v.$medium;

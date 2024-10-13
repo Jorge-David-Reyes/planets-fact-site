@@ -1,11 +1,11 @@
-import { useState } from 'react'
-import { PlanetPage } from './planetfact/pages';
+import { RouterProvider } from 'react-router-dom'
+import { router } from '@/routes'
 
 export const PlanetApp = () => {
 
   return (
     <>
-      <PlanetPage/>
+      <RouterProvider router={router}/>
     </>
   )
 }

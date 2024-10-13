@@ -5,10 +5,10 @@ import { Statistics, ImagePlanet } from '@/planetfact/components/item';
 import data from '@/data/data.json';
 import { getImagePath } from '@/helpers/imageHelper';
 
-const name = 'Earth';
-const attribute = 'earth__image';
+const name = 'Neptune';
+const attribute = 'neptune__image';
 
-export const PlanetPage = () => {
+export const NeptunePage = () => {
   const planet = data.find(p => p.name === name);
   const [selectedSection, setSelectedSection] = useState('overview');
 

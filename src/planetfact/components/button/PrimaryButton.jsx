@@ -1,7 +1,5 @@
-export const PrimaryButton = () => {
+export const PrimaryButton = ({title, onClick}) => {
   return (
-    <button className="button-primary">
-        Ejemplo
-    </button>
+    <button onClick={onClick} className="button-primary">{title}</button>
   )
 }

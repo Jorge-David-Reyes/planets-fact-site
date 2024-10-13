@@ -3,4 +3,4 @@ export * from './logo';
 export * from './navbar';
 export * from './sidebar';
 export * from './button';
-export * from './icon'
+export * from './item';
