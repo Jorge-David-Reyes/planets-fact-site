@@ -3,7 +3,6 @@
 
 .footer__statistic{
     height: 128px;
-    // background-color: blue;
     display: flex;
     padding: 25px;
     flex-direction: column;
@@ -16,12 +15,37 @@
     @include m.tablet{
         height: 88px;
         .title{
+            // font-size: 8px;
             line-height: 16px;
-            font-size: 8px;
+            letter-spacing: 0.73px;
         }
         .info{
             font-size: 24px;
-            line-height: 42px;
+            line-height: auto;
+            letter-spacing: -0.9px;
+        }
+    }
+
+    @include m.mobile{
+        max-width: 327px;
+        width: 100%;
+        height: 48px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        padding-right: 25px;
+        padding-left: 25px;
+
+        .title{
+            font-size: 10px;
+            line-height: 16px;
+            letter-spacing: 0.73px;
+        }
+        .info{
+            font-size: 20px;
+            line-height: 20px;
+            letter-spacing: -0.75px;
         }
     }
 }

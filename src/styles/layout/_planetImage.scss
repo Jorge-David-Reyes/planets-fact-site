@@ -1,0 +1,27 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.planet__image {
+    //* Display
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    //* Size
+    width: 100%;
+
+    //* Transition
+    transition: all ease-in-out 0.3s;
+
+    //* Position
+    position: relative;
+
+    //* Space
+    margin: 0;
+
+    @include m.tablet {
+
+        //* Size
+        width: auto;
+    }
+}

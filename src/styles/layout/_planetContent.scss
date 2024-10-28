@@ -1,0 +1,63 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.planet__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 350px;
+    width: 100%;
+    transition: all ease-in-out 0.3s;
+
+    @include m.tablet {
+        flex-direction: row;
+        max-width: none;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .planet__info {
+        display: flex;
+        flex-direction: column;
+        transition: all ease-in-out 0.3s;
+        margin-bottom: 30px;
+
+        @include m.tablet {
+            width: 339px;
+            min-height: 253px;
+            justify-content: space-between;
+            margin-right: 35px;
+        }
+
+        @include m.mobile {
+            width: auto;
+            height: auto;
+            margin-right: 0;
+            margin-bottom: 0px;
+        }
+
+        .planet__paragraph{
+            @include m.tablet{
+                line-height: 22px;
+                // font-size: 11px;
+            }
+        }
+
+        .planet__source {
+            font-weight: v.$light;
+            .source-link{
+                font-weight: v.$medium;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .planet__menu {
+        transition: all ease-in-out 0.3s;
+
+        @include m.tablet {
+            width: 281px;
+            margin-top: 50px;
+        }
+    }
+}

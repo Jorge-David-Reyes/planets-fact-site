@@ -1,4 +1,5 @@
 @use './variables' as v;
+@use './mixins' as m;
 
 html {
     font-size: 62.5%;
@@ -17,11 +18,15 @@ body {
 
     color: v.$white;
     background-color: v.$black; 
+
+    @include m.mobile {
+        text-align: center;
+    }
 }
 
 main{
     height: 100%;
-    margin-top: 130px;
+    margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 35px;
     margin-right: 35px;
@@ -29,7 +34,12 @@ main{
     transition: all ease-in-out 0.3s;
 
     @include m.tablet{
-        margin-top: 50px;
+        // margin-top: 100px;
+    }
+
+    @include m.mobile{
+        margin-left: 16px;
+        margin-right: 16px;
     }
 }
 
@@ -41,6 +51,16 @@ h1 {
 
     text-transform: uppercase;
     margin: 0px;
+
+    @include m.tablet{
+        font-size: 48px;
+        line-height: auto;
+    }
+
+    @include m.mobile {
+        font-size: 40px;
+        text-align: center;
+    }
 }
 
 h2 {

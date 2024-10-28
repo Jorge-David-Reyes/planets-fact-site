@@ -2,12 +2,16 @@
 @use '../../base/mixins' as m;
 
 .button-primary {
-    /* Dimensiones y disposición */
+    //* Size
     height: 48px;
-    width: 100%;
+    width: 100%!important;
+
+    //* Space
     padding-left: 30px;
-    text-align: start;
     margin-bottom: 20px;
+
+    //* Fonts
+    text-align: start;
 
     /* Borde y fondo */
     border: 1px solid v.$dark-gray;

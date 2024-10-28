@@ -3,7 +3,7 @@ export const ImagePlanet = ({ src, geologySrc, attribute }) => {
   return (
     <>
       <div className={`${attribute} image__container`}>
-        <img src={src} alt={attribute} className="planet"/>
+        <img src={src} alt={attribute} className="image"/>
         {geologySrc && <img src={geologySrc} alt="geology overlay" className="geology" />}
       </div>
     </>
